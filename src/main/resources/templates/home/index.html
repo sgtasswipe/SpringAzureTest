@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Name and pass</title>
+</head>
+<body>
+<h1>Name and password</h1>
+
+<p th:text ="${message}" > </p>
+<span th:if ="${message !='Right!'}">
+    <form action ="/validate" method="post">
+    <label for ="name" > name </label>
+        <input type = "text" id = "name" name="name">
+        <label for ="password" > password </label>
+        <input type = "password" id = "password" name="password">
+        <input type = "submit" value="login" >
+
+    </form>
+
+
+</span>
+
+
+</body>
+</html>
